@@ -5,7 +5,6 @@ String getString(String prompt){
   return stdin.readLineSync();
 }
 
-
 bool  getYesNo(String prompt){
   bool ans;
   while (ans == null ){
@@ -21,15 +20,15 @@ bool  getYesNo(String prompt){
 List<String> getStringList(String prompt){
   print(prompt);
   List<String> myString = [];
-  while(!getYesNo('Do you want to stop?')) {
-    myString.add(getString('Enter next character'));
+  while(!getYesNo('Do you want to stop? Enter "no" to continue OR press enter to stop')) {
+    myString.add(getString('Enter next characters'));
   }
-
   return myString;
 
 }
 void main() {
   List<String> listString = getStringList('Give me some characters! ');
-  //print('After running your function I a list: $listNumbers');
-  print(largest);
+  List<String> listReversed =  (listString.reversed).toList();
+  print(listString);
+  print(listReversed);
 }
