@@ -4,5 +4,8 @@ void main(List<String> arguments) {
   for (int i in calculate_sum){
     sum += i;
   }
-  print(sum);
+  print("The sum of this list is : $sum");
 }
+/*
+The sum of this list is : 2282
+ */

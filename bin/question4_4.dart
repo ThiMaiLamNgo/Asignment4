@@ -21,7 +21,7 @@ bool  getYesNo(String prompt){
 List<String> getStringList(String prompt){
   print(prompt);
   List<String> myString = [];
-  while(!getYesNo('Do you want to stop? Enter "no" to continue OR press enter to stop')) {
+  while(getYesNo ('Do you want to stop? Enter "no" to continue OR press enter to stop')) {
     myString.add(getString('Enter next string'));
   }
   return myString;
