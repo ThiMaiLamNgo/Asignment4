@@ -12,6 +12,7 @@ void main(List<String> arguments) {
       count += 1;
     }
   }
+  print(countNumbers);
   print("The numbers that are larger or equal to 20, and smaller or equal to 80 are: $countNumbers");
   print("There are $count numbers met the condition");
 }
