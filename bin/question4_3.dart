@@ -35,6 +35,7 @@ List<int> getIntList(String prompt){
 
 void main() {
   List<int> listNumbers = getIntList('Give me some numbers! ');
+  print(listNumbers);
   int smallest = listNumbers.fold(listNumbers[0], min); //to get the smallest
   int largest = listNumbers.fold(listNumbers[0], max);// to get the largest
   print(smallest);
