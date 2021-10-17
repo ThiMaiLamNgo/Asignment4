@@ -27,7 +27,7 @@ bool  getYesNo(String prompt){
 List<int> getIntList(String prompt){
   print(prompt);
   List<int> myNumbers = [];
-  while(!getYesNo('Do you want to stop?')) {
+  while(!getYesNo('Do you want to stop? Enter "no" to continue OR press enter to stop')) {
     myNumbers.add(getInt('Enter next number'));
   }
 
@@ -44,19 +44,19 @@ void main() {
 }
 /* TEST:
 Give me some numbers!
-Do you want to stop?
+Do you want to stop? Enter "no" to continue OR press enter to stop
 no
 Enter next number
 1
-Do you want to stop?
-no
-Enter next number
-9
-Do you want to stop?
+Do you want to stop? Enter "no" to continue OR press enter to stop
 no
 Enter next number
 -1
-Do you want to stop?
+Do you want to stop? Enter "no" to continue OR press enter to stop
+no
+Enter next number
+9
+Do you want to stop? Enter "no" to continue OR press enter to stop
 
 -1
 9
