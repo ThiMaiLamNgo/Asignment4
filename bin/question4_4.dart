@@ -33,7 +33,9 @@ void main() {
   print("The original list: $listString");
   print('The reversed list: $listReversed');
 }
-
+/* það er hægt að nota aftur getString og getYesNo functions ef ég  import þau. En ég vil ekki eyða main function inni question3.dart.
+Þannig skrifa ég aftur þessi two functions hér.
+*/
 /*
 Give me a string!
 Do you want to stop? Enter "no" to continue OR press enter to stop
